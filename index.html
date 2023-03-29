@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="/images/ecom-logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stripe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <i class="fa-brands fa-stripe"></i>
+        </div>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="nav">
+          <li><a href="#" onclick="toggleMenu();">Products</a></li>
+          <li><a href="#" onclick="toggleMenu();">Solutions</a></li>
+          <li><a href="#" onclick="toggleMenu();">Developers</a></li>
+          <li><a href="#" onclick="toggleMenu();">Resources</a></li>
+          <li><a href="#" onclick="toggleMenu();">Pricing</a></li>
+        </ul>
+        <div class="sign">
+          <button>Sign in</button>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+      <div class="canvas-container">
+        <canvas id="canv" width="32" height="32"></canvas>
+      </div>
+      <div class="header">
+        <div class="header-text">
+          <h1>Financial<br />infrastructure<br />for the internet<br /></h1>
+          <p>
+            Millions of companies of all sizes—from startups to Fortune<br />
+            500s—use Stripe’s software and APIs to accept payments, send
+            payouts,<br />
+            and manage their businesses online.
+          </p>
+          <div class="header-buttons">
+            <div class="start-button">
+              <button>Start now</button>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="contact-sales">
+              <button>Contact sales</button>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="img-header">
+          <img
+            src="images/stripe-use-cases.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="brands">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968269.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5969/5969328.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5969/5969269.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5977/5977576.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/5968/5968914.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/196/196566.png"
+          alt=""
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/888/888848.png"
+          alt=""
+        />
+      </div>
+      <div class="payments">
+        <div class="payments-text">
+          <h4>Unified platform</h4>
+          <h1>
+            A fully integrated suite of<br />
+            payments products
+          </h1>
+          <div class="payments-p">
+            <p>
+              We bring together everything that’s required to build<br />
+              websites and apps that accept payments and send payouts<br />
+              globally. Stripe’s products power payments for online and
+              in-person<br />
+              retailers, subscriptions businesses, software<br />
+              platforms and marketplaces, and everything in between.
+            </p>
+            <p>
+              We also help companies beat fraud, send<br />
+              invoices, issue virtual and physical cards, reduce<br />
+              friction at checkout, get financing, manage<br />
+              business spend, and much more.
+            </p>
+          </div>
+          <div class="payments-button">
+            <button>Start with payments</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="payments-img">
+          <img
+            src="images/payment-img.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="api">
+        <div class="canvas-container-api">
+          <canvas id="canv" width="32" height="32"></canvas>
+        </div>
+        <div class="api-text">
+          <h4>Designed for developers</h4>
+          <h1>
+            Ship more quickly with<br />
+            powerful and easy-to-use<br />
+            APIs
+          </h1>
+          <p>
+            Save engineering time with unified payments<br />
+            functionality. We obsess over the maze of gateways,<br />
+            payments rails, and financial institutions that make up<br />
+            the global economic landscape so that your teams can<br />
+            build what you need on one platform.
+          </p>
+          <div class="api-button">
+            <button>Read the docs</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="api-img">
+          <img src="images/api-img.png" alt="" />
+        </div>
+      </div>
+      <div class="api-banner">
+        <div class="api-content">
+          <img src="images/1-api.png" alt="" />
+          <h4>Use Stripe with your stack</h4>
+          <p>
+            We offer client and server<br />
+            libraries in everything from<br />
+            React and PHP to .NET<br />
+            and iOS.
+          </p>
+          <div class="banner-content-btn">
+            <button>See libraries</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="api-content">
+          <img src="images/2-api.png" alt="" />
+          <h4>Try no-code options</h4>
+          <p>
+            Customize and deploy<br />
+            payments interfaces directly<br />
+            from the Stripe Dashboard.
+          </p>
+          <div class="banner-content-btn">
+            <button>Explore no-code</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="api-content">
+          <img src="images/3-api.png" alt="" />
+          <h4>Explore prebuilt integrations</h4>
+          <p>
+            Integrate with systems including<br />
+            Adobe, Salesforce, and<br />
+            NetSuite, or sync Stripe data to<br />
+            your warehouse.
+          </p>
+          <div class="banner-content-btn">
+            <button>View connectors</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="api-content">
+          <img src="images/4-api.png" alt="" />
+          <h4>Build an app on Stripe</h4>
+          <p>
+            Create a custom backend<br />
+            integration or interface within<br />
+            Stripe—make it just for your<br />
+            team or list it on the Stripe App<br />
+            Marketplace.
+          </p>
+          <div class="banner-content-btn">
+            <button>Learn about apps</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="finance">
+        <div class="finance-text">
+          <h4>Why Stripe</h4>
+          <h1>
+            A technology-first approach to payments<br />
+            and finance
+          </h1>
+        </div>
+        <div class="finance-content">
+          <div class="finance-box">
+            <i class="fa-solid fa-atom"></i>
+            <h4>Close to the metal</h4>
+            <p>
+              From direct integrations with<br />
+              card networks and banks to<br />
+              checkout flows in the browser,<br />
+              we operate on and optimize at<br />
+              every level of the financial<br />
+              stack.
+            </p>
+          </div>
+          <div class="finance-box">
+            <i class="fa-solid fa-play"></i>
+            <h4>Fastest-improving platform</h4>
+            <p>
+              We release hundreds of<br />
+              features and improvements<br />
+              each year to help you stay<br />
+              ahead of industry shifts. (On<br />
+              average, we deploy our<br />
+              production API 16x per day.)
+            </p>
+          </div>
+          <div class="finance-box">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h4>Battle-tested reliability</h4>
+            <p>
+              Our systems operate with<br />
+              99.99%+ uptime and are highly<br />
+              scalable and redundant. Stripe<br />
+              is certified to the highest<br />
+              compliance standards.
+            </p>
+          </div>
+          <div class="finance-box">
+            <i class="fa-solid fa-gears"></i>
+            <h4>Intelligent optimizations</h4>
+            <p>
+              Our machine learning models<br />
+              train on billions of data points<br />
+              and help increase revenue<br />
+              across conversion, fraud,<br />
+              revenue recovery, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="global">
+        <div class="canvas-container-global">
+          <canvas id="canv" width="32" height="32"></canvas>
+        </div>
+        <div class="global-text">
+          <h4>Global scale</h4>
+          <h1>
+            The backbone for global<br />
+            commerce
+          </h1>
+          <p>
+            Stripe makes moving money as easy and<br />
+            programmable as moving data. Our teams are<br />
+            based in offices around the world and we process<br />
+            hundreds of billions of dollars each year for<br />
+            ambitious businesses of all sizes.
+          </p>
+        </div>
+        <div class="global-video">
+          <video src="https://github.blog/wp-content/uploads/2020/12/graceful-degredation.h264.mp4?_=3" muted autoPlay loop type="video/mp4"></video>
+        </div>
+      </div>
+      <div class="global-content">
+        <div class="global-box">
+          <span>250M+</span>
+          <p>
+            API requests per day, peaking<br />
+            at 13,000 requests a second.
+          </p>
+        </div>
+        <div class="global-box">
+          <span>99.999%</span>
+          <p>
+            historical uptime for Stripe<br />
+            services.
+          </p>
+        </div>
+        <div class="global-box">
+          <span>90%</span>
+          <p>
+            of U.S. adults have bought from<br />
+            businesses using Stripe
+          </p>
+        </div>
+        <div class="global-box">
+          <span>135+</span>
+          <p>
+            currencies and payment<br />
+            methods supported.
+          </p>
+        </div>
+      </div>
+      <div class="explore">
+        <div class="explore-contact">
+          <h2>Ready to get started?</h2>
+          <p>
+            Explore Stripe Payments, or create an account<br />
+            instantly and start accepting payments. You can<br />
+            also contact us to design a custom package for<br />
+            your business.
+          </p>
+          <div class="explore-buttons">
+            <div class="start-button">
+              <button>Start now</button>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <div class="contact-sales">
+              <button>Contact sales</button>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="explore-content">
+          <i class="fa-solid fa-tags content-btn"></i>
+          <h4>Always know what you pay</h4>
+          <p>
+            Integrated per-transaction<br />
+            pricing with no hidden fees.
+          </p>
+          <div class="explore-content-btn">
+            <button>Pricing details</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+        <div class="explore-content">
+          <i class="fa-solid fa-code-branch content-btn"></i>
+          <h4>Start your integration</h4>
+          <p>
+            Get up and running with Stripe<br />
+            in as little as 10 minutes.
+          </p>
+          <div class="explore-content-btn">
+            <button>API reference</button>
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer-logo">
+          <i class="fa-brands fa-stripe"></i>
+          <span>United States</span>
+          <span>English(United States)</span>
+          <span class="copyright">&#169; Built & Designed by Hani Mohammed</span>
+        </div>
+        <div class="footer-content">
+          <div class="footer-products">
+            <h5>Products</h5>
+            <ul>
+              <li>Atlas</li>
+              <li>Billing</li>
+              <li>Capital</li>
+              <li>Checkout</li>
+              <li>Climate</li>
+            </ul>
+          </div>
+          <div class="footer-solutions">
+            <h5>Solutions</h5>
+            <ul>
+              <li>Ecommerce</li>
+              <li>SaaS</li>
+              <li>Marketplaces</li>
+              <li>Embedded Finance</li>
+              <li>Platforms</li>
+            </ul>
+          </div>
+          <div class="footer-resources">
+            <h5>Resources</h5>
+            <ul>
+              <li>Support Center</li>
+              <li>Support Plans</li>
+              <li>Guides</li>
+              <li>Customer Stories</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

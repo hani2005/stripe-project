@@ -1,0 +1,1514 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/*================= General Styles ================*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 1400px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10000;
+}
+
+/*================= Navbar ================*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 275px;
+}
+
+.header-text h1 {
+  letter-spacing: -2.5px;
+}
+
+.menuToggle {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  font-size: 1.1rem;
+  position: relative;
+  align-items: center;
+}
+
+.sign button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.sign {
+  border: 3px solid white;
+  padding: 0.7rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.sign i {
+  font-size: 1rem;
+  color: white;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo i {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+}
+
+/*================= Header ================*/
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48rem;
+  overflow: hidden;
+}
+
+.header-text h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  line-height: 6.5rem;
+}
+
+.header-text p {
+  color: #555657;
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+  line-height: 1.7rem;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-buttons i {
+  color: white;
+}
+
+.start-button button {
+  color: white;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.start-button {
+  background-color: #0a2540;
+  padding-right: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.contact-sales i {
+  color: #0a2540;
+}
+
+.contact-sales button {
+  color: #0a2540;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-sales {
+  cursor: pointer;
+}
+
+.img-header img {
+  margin-left: 2rem;
+  margin-right: -7.5rem;
+  width: 750px;
+  height: 680px;
+}
+
+/*================= Canvas Containers ================*/
+
+.canvas-container {
+  height: 70rem;
+  width: 600rem;
+  clip-path: polygon(0 0, 100% 0, 100% -60%, 0% 100%);
+  position: absolute;
+  left: -150rem;
+  top: -10rem;
+  z-index: -1;
+}
+
+.canvas-container-api {
+  height: 150rem;
+  width: 600rem;
+  clip-path: polygon(0 97%, 0 41%, 100% 0, 100% 58%);
+  position: absolute;
+  left: -150rem;
+  top: -52rem;
+  background-color: #0a2540;
+}
+
+.canvas-container-global {
+  height: 100rem;
+  width: 600rem;
+  clip-path: polygon(0 97%, 0 41%, 100% 0, 100% 58%);
+  position: absolute;
+  left: -150rem;
+  top: -32rem;
+  background-color: #010f1d;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/*================= Brands ================*/
+
+.brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding-bottom: 8rem;
+}
+
+.brands img {
+  width: 90px;
+  height: 90px;
+}
+
+/*================= Payments ================*/
+
+.payments {
+  background-color: #edf1f4;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.payments-text {
+  padding: 0rem 3rem;
+}
+
+.payments-text h4 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: #0a2540;
+}
+
+.payments-text h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.payments-p {
+  display: flex;
+  gap: 80px;
+}
+
+.payments-p p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #555657;
+}
+
+.payments-img img {
+  width: 1400px;
+  height: 1000px;
+}
+
+.payments-button button {
+  color: white;
+  border: none;
+  background-color: #0a2540;
+  padding: 0.8rem 2rem 0.8rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.payments-button i {
+  color: white;
+  margin-left: -1.8rem;
+}
+/*================= Api ================*/
+
+.api {
+  display: flex;
+  padding: 8rem 3rem 1rem 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a2540;
+  position: relative;
+}
+
+.api-text h4 {
+  font-size: 1.4rem;
+  color: #01b7e0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.api-text {
+  color: white;
+  z-index: 1;
+}
+
+.api-img img {
+  border-radius: 20px;
+  margin-left: 3rem;
+  border: 6px solid #01b7e0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.api-text h1 {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.api-text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #9cadbe;
+}
+
+.api-button button {
+  color: #0a2540;
+  border: none;
+  background-color: #01b7e0;
+  padding: 0.8rem 2.2rem 0.8rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.api-button i {
+  color: #0a2540;
+  margin-left: -1.7rem;
+}
+
+.api-button {
+  margin-top: 2rem;
+}
+
+.api-content img {
+  width: 40px;
+  height: 40px;
+  color: #01b7e0;
+}
+
+.api-banner {
+  display: flex;
+  gap: 110px;
+  padding-top: 7rem;
+  justify-content: center;
+  background-color: #0a2540;
+  position: relative;
+  z-index: 1;
+}
+
+.api-content i {
+  color: #01b7e0;
+  width: 50px;
+  height: 50px;
+}
+
+.api-content h4 {
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border-left: 3px solid #01b7e0;
+  padding-left: 0.5rem;
+}
+
+.api-content p {
+  color: #919aa5;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-top: 0;
+}
+
+.api-content button {
+  color: #01b7e0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.8rem 2.2rem 0.8rem 1rem;
+}
+
+.api-content i {
+  color: #01b7e0;
+  margin-left: -1.2rem;
+}
+
+/*================= Finance ================*/
+
+.finance {
+  padding: 20rem 8rem 10rem 8rem;
+}
+
+.finance-text h4 {
+  color: #0a2540;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.finance-text h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  color: #0a2540;
+}
+
+.finance-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 4rem;
+}
+
+.finance-box i {
+  color: #0a2540;
+  font-size: 2.5rem;
+}
+
+.finance-box h4 {
+  color: black;
+  border-left: 3px solid #0a2540;
+  padding-left: 0.5rem;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.finance-box p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #4d4d4d;
+}
+
+/*================= Global ================*/
+
+.global {
+  display: flex;
+  background-color: #010f1d;
+  justify-content: space-between;
+  padding: 8rem 8rem 0.2rem 8rem;
+  align-items: center;
+  position: relative;
+}
+
+.global-content {
+  display: flex;
+  padding: 0 8rem 7rem 8rem;
+  background-color: #010f1d;
+  gap: 20px;
+}
+
+.global-box {
+  z-index: 10000;
+}
+
+.global-video video {
+  opacity: 0.9;
+  width: 1040px;
+  height: 1040px;
+}
+
+.global-video {
+  position: absolute;
+  left: 30rem;
+  top: -10rem;
+}
+
+.global-text {
+  z-index: 10000;
+}
+
+.global-text h4 {
+  color: #01b7e0;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.global-text h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.global-text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #9cadbe;
+  margin-bottom: 4rem;
+}
+
+.global-content span {
+  color: white;
+  border-left: 3px solid #01b7e0;
+  padding-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.global-content p {
+  color: #919aa5;
+  line-height: 1.5rem;
+}
+
+/*================= Explore ================*/
+
+.explore {
+  display: flex;
+  padding: 12rem 8rem;
+  gap: 100px;
+}
+
+.explore-contact h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0a2540;
+}
+
+.explore-contact p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #4d4d4d;
+}
+
+.explore-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.start-button i {
+  color: white;
+}
+
+.content-btn {
+  font-size: 2rem;
+}
+
+.explore-content h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a2540;
+  padding-left: 0.5rem;
+  border-left: 3px solid #0a2540;
+}
+
+.explore-content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #4d4d4d;
+}
+
+.explore-content-btn button {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #0a2540;
+  padding: 0;
+  font-weight: bold;
+}
+
+.explore-content-btn i {
+  margin-left: 0.5rem;
+}
+
+/*================= Footer ================*/
+
+.footer {
+  display: flex;
+  gap: 150px;
+  background-color: #0a2540;
+  color: white;
+  padding: 8rem;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo span {
+  margin-bottom: 0.5rem;
+}
+
+.copyright {
+  margin-top: 4.3rem;
+}
+
+.footer-logo i {
+  font-size: 3rem;
+  margin-top: -0.6rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 150px;
+}
+
+.footer-content li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-content ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.footer-content h5 {
+  font-size: 1.1rem;
+  margin-top: 0;
+}
+
+/*================= Media Screens ================*/
+@media screen and (max-width: 1400px) {
+  .header {
+    padding: 5rem;
+  }
+
+  .header-text h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+
+  .img-header img {
+    width: 650px;
+    height: 580px;
+  }
+
+  .payments-text {
+    padding: 5rem 10rem;
+  }
+
+  .payments-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .payments-img img {
+    width: 1100px;
+    height: 800px;
+  }
+
+  .brands {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .container {
+    overflow: hidden;
+  }
+
+  .navbar {
+    gap: 100px;
+  }
+
+  .header {
+    padding: 5rem 15rem;
+  }
+
+  .header-text h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+
+  .header-text p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+
+  .img-header img {
+    width: 750px;
+    height: 640px;
+    margin-right: -35rem;
+  }
+
+  .brands {
+    padding: 5rem 5rem 5rem 15rem;
+  }
+
+  .payments-text {
+    padding: 5rem 8rem 5rem 14rem;
+  }
+
+  .payments-img {
+    padding-left: 8rem;
+  }
+
+  .api {
+    padding-left: 15rem;
+  }
+
+  .api-text h1 {
+    font-size: 1.9rem;
+  }
+
+  .api-text h4 {
+    font-size: 1rem;
+  }
+
+  .api-text p {
+    font-size: 1rem;
+  }
+
+  .api-banner {
+    padding-left: 10rem;
+    gap: 80px;
+  }
+
+  .finance {
+    padding-left: 15rem;
+  }
+
+  .finance-box p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .finance-text h1 {
+    font-size: 2rem;
+  }
+
+  .finance-text h4 {
+    font-size: 1.1rem;
+  }
+
+  .global {
+    padding-left: 15rem;
+  }
+
+  .global-text h1 {
+    font-size: 2rem;
+  }
+
+  .global-text p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .global-content {
+    padding-left: 15rem;
+  }
+
+  .global-content p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  .explore {
+    margin: 19rem 0 10rem 15rem;
+    padding: 0;
+  }
+
+  .explore-contact p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .explore-content p {
+    font-size: 1rem;
+  }
+
+  .footer {
+    padding-left: 16rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    gap: 50px;
+  }
+
+  .header {
+    padding: 0 5rem 2rem 5rem;
+  }
+
+  .header-text h1 {
+    font-size: 5.3rem;
+    line-height: 5rem;
+  }
+
+  .header-text p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    width: 38rem;
+  }
+
+  .img-header img {
+    width: 750px;
+    height: 640px;
+    margin-right: -30rem;
+  }
+
+  .brands img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .brands {
+    padding: 5rem;
+  }
+
+  .payments-text {
+    padding: 5rem 5rem 5rem 7rem;
+  }
+
+  .payments-img {
+    padding: 0;
+  }
+
+  .payments-text h1 {
+    font-size: 2rem;
+  }
+
+  .payments-p p br {
+    display: none;
+  }
+
+  .payments-p p {
+    font-size: 1rem;
+  }
+
+  .payments-img img {
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .api {
+    padding: 0 5rem 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .api-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .api-text h1 {
+    font-size: 2.5rem;
+  }
+
+  .api-text p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  .api-img img {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .api-img {
+    margin-top: 5rem;
+  }
+
+  .api-banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem 7rem;
+    gap: 40px;
+  }
+
+  .api-content h4 {
+    font-size: 1.1rem;
+  }
+
+  .api-content p br {
+    display: none;
+  }
+
+  .api-content p {
+    font-size: 0.85rem;
+  }
+
+  .api-content button {
+    font-size: 1rem;
+  }
+
+  .finance {
+    padding: 14rem 8rem 10rem 8rem;
+  }
+
+  .finance-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .finance-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .finance-box p {
+    font-size: 0.9rem;
+  }
+
+  .finance-box p br {
+    display: none;
+  }
+
+  .global {
+    padding: 8rem 8rem 8rem 7rem;
+  }
+
+  .global-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 7rem 7rem 7rem;
+    background-color: transparent;
+  }
+
+  .global-text p {
+    margin-bottom: 0;
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+  }
+
+  .global-video video {
+    opacity: 0.9;
+    width: 840px;
+    height: 840px;
+  }
+
+  .global-video {
+    position: absolute;
+    left: 13rem;
+    top: -2rem;
+  }
+
+  .global-text p br {
+    display: none;
+  }
+
+  .explore {
+    padding: 8rem 7rem;
+    margin: 0;
+    gap: 50px;
+    display: grid;
+  }
+
+  .explore-content p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .explore-content p br {
+    display: none;
+  }
+
+  .content-btn {
+    margin-bottom: 2rem;
+  }
+
+  .explore-content h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+  }
+
+  .explore-contact p {
+    font-size: 0.9rem;
+    width: 20rem;
+  }
+
+  .explore-contact p br {
+    display: none;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    padding: 5rem 3rem;
+  }
+
+  .copyright {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .navbar {
+    gap: 20px;
+  }
+  .nav {
+    gap: 15px;
+  }
+
+  .header-text {
+    width: auto;
+  }
+
+  .header-text h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    width: 33rem;
+  }
+
+  .header-text p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    width: auto;
+  }
+
+  .img-header img {
+    width: 700px;
+    height: 600px;
+    margin-right: -30rem;
+  }
+
+  .header-text p br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .menuToggle {
+    display: block;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .sign {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.active {
+    width: 50%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    padding: 30px;
+    border-radius: 20px;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+    z-index: 11111;
+  }
+
+  .nav li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .nav li a {
+    padding: 5px 0;
+    color: #111;
+    font-size: 1.2rem;
+  }
+
+  .menuToggle {
+    width: 40px;
+    height: 40px;
+    background-size: 30px !important;
+    background: url(images/menu-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background-size: 20px !important;
+    background: url(images/close-btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    padding: 10px;
+    z-index: 111111;
+    cursor: pointer;
+  }
+
+  .header {
+    height: 40rem;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 29rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: auto;
+  }
+
+  .img-header img {
+    width: 700px;
+    height: 600px;
+    margin-right: -30rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .header-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 25rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: 18rem;
+  }
+
+  .img-header img {
+    width: 700px;
+    height: 600px;
+    margin-right: -30rem;
+  }
+
+  .header-text {
+    margin-right: -2rem;
+  }
+
+  .header-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .start-button button {
+    font-size: 1rem;
+  }
+
+  .start-button i {
+    font-size: 1rem;
+  }
+
+  .contact-sales button {
+    font-size: 1rem;
+  }
+
+  .contact-sales i {
+    font-size: 1rem;
+  }
+
+  .payments-p p {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+  }
+
+  .payments-button button {
+    font-size: 0.85rem;
+  }
+
+  .payments-button i {
+    font-size: 0.8rem;
+  }
+
+  .menuToggle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .api-text h4 {
+    font-size: 1rem;
+  }
+
+  .api-text h1 {
+    font-size: 2rem;
+  }
+
+  .api-text p {
+    font-size: 1rem;
+  }
+
+  .api-button button {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .header-text h1 {
+    font-size: 3.8rem;
+    line-height: 3.8rem;
+    width: 25rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: 18rem;
+  }
+
+  .img-header img {
+    width: 700px;
+    height: 600px;
+    margin-right: -32rem;
+  }
+
+  .header-text {
+    margin-right: -2rem;
+  }
+  .payments-text {
+    padding: 5rem 5rem;
+  }
+
+  .payments-p {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .payments-text h1 br {
+    display: none;
+  }
+
+  .finance-content {
+    grid-template-columns: auto;
+  }
+
+  .finance-text h1 br {
+    display: none;
+  }
+
+  .api-banner {
+    grid-template-columns: auto;
+  }
+
+  .global-video {
+    left: 7rem;
+  }
+
+  .global-text h1 br {
+    display: none;
+  }
+
+  .global-content {
+    background-color: #010f1d;
+  }
+
+  .footer-content {
+    gap: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    justify-content: stretch;
+    padding: 0 0 0 1.5rem;
+  }
+
+  .header-text h1 {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    width: 25rem;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: 22rem;
+  }
+
+  .img-header img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .canvas-container {
+    height: 52rem;
+  }
+
+  .header-text h1 {
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    width: auto;
+  }
+
+  .header-text p {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+    width: 18rem;
+  }
+
+  .nav.active {
+    width: 92%;
+  }
+
+  .start-button button {
+    font-size: 1rem;
+  }
+
+  .contact-sales button {
+    font-size: 1rem;
+  }
+
+  .brands {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .brands img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .payments-text {
+    padding: 2rem;
+  }
+
+  .payments-p p {
+    font-size: 1rem;
+  }
+
+  .api {
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+  }
+
+  .api-text h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .api-text p br {
+    display: none;
+  }
+
+  .api-text p {
+    font-size: 1.1rem;
+  }
+
+  .api-banner {
+    padding: 4rem 2rem 2rem 2rem;
+    gap: 15px;
+  }
+
+  .api-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .api-img img {
+    display: none;
+  }
+
+  .finance {
+    padding: 5rem 2rem;
+  }
+
+  .finance-text h4 {
+    font-size: 1.2rem;
+  }
+
+  .finance-text h1 {
+    font-size: 2rem;
+  }
+
+  .global {
+    padding: 2rem;
+  }
+
+  .global-text p {
+    font-size: 1.1rem;
+    margin: 2.5rem 0 0 0;
+  }
+
+  .global-content {
+    padding: 2rem;
+  }
+
+  .global-video {
+    left: auto;
+  }
+
+  .explore {
+    padding: 19rem 2rem 5rem 2rem;
+    gap: 70px;
+  }
+
+  .explore-contact p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .explore-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer {
+    padding: 2rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer ul {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .header-text h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    width: auto;
+  }
+
+  .header-text p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    width: 14rem;
+  }
+
+  .start-button button {
+    font-size: 1rem;
+  }
+
+  .contact-sales button {
+    font-size: 1rem;
+  }
+
+  .brands {
+    padding: 0;
+  }
+
+  .brands img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .payments-text h4 {
+    font-size: 1rem;
+  }
+
+  .payments-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .payments p {
+    font-size: 0.8rem;
+  }
+
+  .api {
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .api-text h4 {
+    font-size: 0.8rem;
+  }
+
+  .api-text h1 {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    width: 18rem;
+  }
+
+  .api-text p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .api-button button {
+    font-size: 0.7rem;
+  }
+
+  .finance-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .explore {
+    padding: 2rem;
+  }
+
+  .explore-contact p {
+    font-size: 0.8rem;
+    width: auto;
+  }
+
+  .explore-buttons {
+    gap: 0;
+  }
+
+  .explore-contact h2 {
+    font-size: 1.5rem;
+  }
+
+  .payments-text {
+    padding: 0;
+  }
+}
